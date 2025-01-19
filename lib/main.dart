@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+// Column / Row / Text / SizeBox
 void main() {
   runApp(const MyApp());
 }
@@ -21,46 +21,46 @@ class Character extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.amber[800],
+      backgroundColor: const Color.fromARGB(255, 44, 126, 71),
       appBar: AppBar(
-        backgroundColor: Colors.amber[700],
+        backgroundColor: const Color.fromARGB(255, 119, 92, 228),
         title: const Text(
-          "BBANTO ID CARD",
+          "BBANTO ID CARD #2",
           style: TextStyle(color: Colors.white),
         ),
-        centerTitle: true,
+        // centerTitle: true,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(30),
+        padding: const EdgeInsets.all(130),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Center(
               child: Image.asset(
-                'images/ch1.png',
-                width: 220,
-                height: 150,
+                'images/kakao1.png',
+                width: 210,
+                height: 210,
               ),
             ),
             Divider(
-              height: 40,
-              color: Colors.grey[850],
-              thickness: 0.5,
+              height: 140,
+              color: const Color.fromARGB(255, 237, 49, 49),
+              thickness: 1.5,
             ),
             const Text(
               'NAME',
-              style: TextStyle(color: Colors.white, letterSpacing: 2.0),
+              style: TextStyle(color: Colors.white, letterSpacing: 5.0),
             ),
             const SizedBox(
-              height: 10.0,
+              height: 50.0,
             ),
             const Text(
               'BBANTO',
               style: TextStyle(
                 color: Colors.white,
                 letterSpacing: 2.0,
-                fontSize: 28,
-                fontWeight: FontWeight.bold,
+                fontSize: 58,
+                fontWeight: FontWeight.w900,
               ),
             ),
             const SizedBox(
@@ -87,14 +87,14 @@ class Character extends StatelessWidget {
             ),
             const Row(
               children: [
-                Icon(Icons.check_circle_outline),
+                Icon(Icons.turn_left, size: 40),
                 SizedBox(
-                  width: 10,
+                  width: 50,
                 ),
                 Text(
                   'Using lightsaber',
                   style: TextStyle(
-                    fontSize: 16.0,
+                    fontSize: 26.0,
                     letterSpacing: 1.0,
                   ),
                 ),
@@ -136,8 +136,8 @@ class Character extends StatelessWidget {
             Center(
               child: CircleAvatar(
                 backgroundImage: const AssetImage('images/ch2.png'),
-                backgroundColor: Colors.amber[800],
-                radius: 50,
+                backgroundColor: const Color.fromARGB(255, 44, 126, 71),
+                radius: 150,
               ),
             ),
           ],
